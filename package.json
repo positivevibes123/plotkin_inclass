@@ -1,0 +1,19 @@
+{
+  "name": "plotkin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/positivevibes123/plotkin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/positivevibes123/plotkin/issues"
+  },
+  "homepage": "https://github.com/positivevibes123/plotkin#readme"
+}
