@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import NavBar from "./components/Navbar.vue"
+import { RouterView } from 'vue-router';
+import NavBar from './components/Navbar.vue';
+import NotificationList from './components/NotificationList.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import NavBar from "./components/Navbar.vue"
     <NavBar/>
   </header>
   <div class="container body-container">
+    <NotificationList/>
     <RouterView />
   </div>
 </template>
