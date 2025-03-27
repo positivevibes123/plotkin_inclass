@@ -1,30 +1,25 @@
-/* Example comment */
+/*  B"H
+*/
+// Load the http module to create an http server.
+const express = require('express')
+const productsController = require('./controllers/products')
 
-/* Load the http module to create an HTTP server. */
-const express = require('express');
-const PORT = 8000;
+const PORT = 8000
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello New Paltz!');
-});
+app
+  .get('/', (req, res) => {
+    res.send('Hello New Paltz, NY!!!')
+  })
+  .use('/products', productsController)
 
-/*const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Hello New Paltz!\n");
-});*/
-
-/* The two functions below are identical:
-
-const square = x => x * x;
-
-function square2(x) {
-    return x * x;
-}*/
-
+// Listen on port 8000, IP defaults to
+//
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}/`);
+    console.log(`Server running at http://localhost:${PORT}/`)
 });
 
-console.log("Hello World!");
+
+
+console.log('Hello World!')
